@@ -1,9 +1,11 @@
-const { fontFamily } = require("tailwindcss/defaultTheme")
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
-  content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}"],
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -47,14 +49,22 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "zen-color-primary": " #6EC1E4",
+        "zen-color-secondary": " #54595F",
+        "zen-color-text": " #7A7A7A",
+        "zen-color-accent": " #61CE70",
+        "zen-color-aa38801": " #28BD86",
+        "zen-color-ae6c464": " #F7FDFB",
+        "zen-color-a0b8b2d": " #0F9D58",
+        "zen-color-67895ed": " #FF7722",
+        "zen-color-a458642": " #DB4437",
+        "zen-color-8c6b022": " #F4B400",
+        "zen-color-cbaae35": " #4285F4",
       },
       borderRadius: {
-        lg: `var(--radius)`,
-        md: `calc(var(--radius) - 2px)`,
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
-      },
-      fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       keyframes: {
         "accordion-down": {
