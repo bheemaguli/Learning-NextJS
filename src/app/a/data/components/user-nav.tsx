@@ -10,14 +10,13 @@ import {
 	DropdownMenuShortcut,
 	DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import Link from "next/link";
 
 export function UserNav() {
 	return (
 		<DropdownMenu>
 			<DropdownMenuTrigger asChild>
 				<Button variant="ghost" className="relative h-8 w-8 rounded-full">
-					<Avatar className="h-8 w-8">
+					<Avatar className="h-9 w-9">
 						<AvatarImage src="" alt="@shadcn" />
 						<AvatarFallback>SC</AvatarFallback>
 					</Avatar>
@@ -50,10 +49,8 @@ export function UserNav() {
 				</DropdownMenuGroup>
 				<DropdownMenuSeparator />
 				<DropdownMenuItem>
-					<Link href="/a/logout">
-						Log out
-						<DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
-					</Link>
+					Log out
+					<DropdownMenuShortcut>⇧⌘Q</DropdownMenuShortcut>
 				</DropdownMenuItem>
 			</DropdownMenuContent>
 		</DropdownMenu>
