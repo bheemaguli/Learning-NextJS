@@ -31,7 +31,7 @@ export function MainNav({
 				</DropdownMenuTrigger>
 				<DropdownMenuContent className="w-56" align="end" forceMount>
 					{[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (
-						<DropdownMenuGroup>
+						<DropdownMenuGroup key={i}>
 							<DropdownMenuItem>Notification {i}</DropdownMenuItem>
 						</DropdownMenuGroup>
 					))}

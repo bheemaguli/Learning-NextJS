@@ -39,6 +39,7 @@ export function Sidebar({ className, playlists }: SidebarProps) {
 						<div className="space-y-1 p-2">
 							{playlists?.map((playlist, i) => (
 								<SidebarButton
+									key={i}
 									text={playlist}
 									className="bg-red-200 text-red-800"
 									icon={

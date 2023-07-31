@@ -22,8 +22,11 @@ export default function Home() {
 					<MainNav className="ms-auto mr-5" />
 					<UserNav />
 				</nav>
-				{[1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5].map((x) => (
-					<div className=" container grid grid-cols-1 gap-6 mb-6 lg:grid-cols-3">
+				{[1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 1, 2, 3, 4, 5].map((x, i) => (
+					<div
+						className=" container grid grid-cols-1 gap-6 mb-6 lg:grid-cols-3"
+						key={i}
+					>
 						<div className="w-full px-4 py-5 bg-white rounded-lg shadow">
 							<div className="text-sm font-medium text-gray-500 truncate">
 								Total users
