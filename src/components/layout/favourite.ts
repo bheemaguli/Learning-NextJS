@@ -1,7 +1,7 @@
 export type Playlist = (typeof playlists)[number];
 
 export const playlists = [
-	"REC122DS23ED",
+	"REC122D423ED",
 	"REC122DS23ED",
 	"TOP122DS23GS",
 	"TOP122DS23MS",
