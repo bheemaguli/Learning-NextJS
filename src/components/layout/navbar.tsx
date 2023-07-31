@@ -50,7 +50,7 @@ export function MainNav({
 						<div className="bg-red-600 rounded-full w-3 h-3 fixed translate-x-[7px] -translate-y-2"></div>
 					</Button>
 				</DropdownMenuTrigger>
-				<DropdownMenuContent className="w-56" align="center" forceMount>
+				<DropdownMenuContent className="w-56" align="end" forceMount>
 					{[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((i) => (
 						<DropdownMenuGroup key={i}>
 							<DropdownMenuItem>Notification {i}</DropdownMenuItem>

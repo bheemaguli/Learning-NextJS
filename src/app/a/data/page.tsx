@@ -8,6 +8,7 @@ import { columns } from "./components/columns";
 import { DataTable } from "./components/data-table";
 import { UserNav } from "./components/user-nav";
 import { taskSchema } from "./data/schema";
+import { Card, CardContent } from "@/components/ui/card";
 
 export const metadata: Metadata = {
 	title: "Tasks",
@@ -43,7 +44,11 @@ export default async function TaskPage() {
 						<UserNav />
 					</div>
 				</div>
-				<DataTable data={tasks} columns={columns} />
+				<Card>
+					<CardContent className="my-4">
+						<DataTable data={tasks} columns={columns} />
+					</CardContent>
+				</Card>
 			</div>
 		</>
 	);
